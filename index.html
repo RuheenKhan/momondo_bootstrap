@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMONDO - MAKE YOUR TRAVELLING EASY</title>
+    <script src="https://kit.fontawesome.com/1261db9a65.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- header section start  -->
+    <nav class="navbar navbar-expand-lg bg-primary1 ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="wi-25" src="./assets/img/logo.png" alt=""></a>
+          <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars text-white"></i>
+
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-danger1 fw-bold" aria-current="page" href="#">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Hotel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Car Hire</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Trip Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Inspirations</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          English(GBP)
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Hindi</a></li>
+                          <li><a class="dropdown-item" href="#">Arabic </a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Korean</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-success1 fw-bold" href="#">Log in</a>
+                        
+                    </li>
+                </ul>
+                
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- /header section end  -->
+
+
+
+    <!-- banner section start  -->
+    <section class="banner p-lr">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-3 pt-6t">"The best place to find the cheapest airfares"</h1>
+            <p class="fs-2 fw-bold pt-3">-every single time</p>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-lg-12 bg-purple2 mx-auto rounded m-top position-relative mb-3">
+             <ul class="nav nav-tabs border-clean m-bottom" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-0 border-0 text-white" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-plane-departure"></i> Flights</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-purple1 mx-1 rounded-0 border-0 text-white" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotels</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link bg-purple1 rounded-0 border-0 text-white" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="fa-solid fa-car"></i> Cars</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+                <form class="row gy-2 gx-3 align-items-center">
+
+                  <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
+                    <label class="visually-hidden" for="autoSizingInputGroup">City</label>
+                    <div class="input-group">
+                      <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter origin city">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                    <label class="visually-hidden" for="autoSizingInputGroup">destination</label>
+                    <div class="input-group">
+                      <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter destination city">
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                    <label class="visually-hidden" for="autoSizingInput">sDate</label>
+                    <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                    <label class="visually-hidden" for="autoSizingInput">eDate</label>
+                    <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-3 padding-right">
+                    <label class="visually-hidden" for="autoSizingSelect">Passenger</label>
+                    <div class="input-group">
+                      <div class="input-group-text"><i class="fa-solid fa-users text-secondary"></i></div>
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>number of passenger</option>
+                        <option value="1">passenger One</option>
+                        <option value="2">passenger Two</option>
+                        <option value="3">passenger Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 col-lg-1 padding-right">
+                    <button type="submit" class="btn btn-primary position-absolute btn-class">Submit</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+              
+            </div>
+
+            <form class="row gy-2 gx-3 align-items-center mb-1">
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <label class="visually-hidden " for="autoSizingSelect">Trip</label>
+                <div class="input-group">
+                  <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-suitcase-rolling text-white"></i></div>
+                  <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
+                    <option selected>Trip type: Return trip</option>
+                    <option value="1">Trip 1 </option>
+                    <option value="2">Trip 2</option>
+                    <option value="3">Trip 3</option>
+                  </select>
+                  </div>
+                </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <label class="visually-hidden" for="autoSizingSelect">Trip</label>
+                <div class="input-group">
+                  <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-ticket text-white"></i></div>
+                  <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
+                  <option selected>Ticket class: Economy</option>
+                  <option value="1">Classic</option>
+                  <option value="2">Business</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                  <label class="form-check-label text-skyblue" for="autoSizingCheck">
+                    Direct flights only
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-3 ">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                  <label class="form-check-label text-skyblue" for="autoSizingCheck">
+                    Include nearby airports
+                  </label>
+                </div>
+              </div>
+        
+            </form>
+          </div>
+        </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /banner section end  -->
+
+
+
+    <!-- fun section start  -->
+    <section class="fun py-4">
+      <div class="container">
+        <h3 class="text-white fw-bold text-center">SOME FUN WE COVERED</h3>
+        <div class="row text-white m-top1">
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+              <i class="fa-solid fa-person-biking icon h1 text-white"></i>
+              <h3>480 M</h3>
+              <p>CYCLING RACK</p>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+              <i class="fa-solid fa-route icon h1 text-white"></i>
+              <h3>480 M</h3>
+              <p>DISTANCE COVERD</p>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+              <i class="fa-solid fa-person-hiking icon h1 text-white"></i>
+              <h3>5670 M</h3>
+              <p>ALTITUDE HIKED</p>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+              <i class="fa-solid fa-sailboat icon h1 text-white"></i>
+              <h3>180 KM</h3>
+              <p>SAILING DISTANCE</p>
+            </div>
+            
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3"> 
+              <i class="fa-solid fa-mountain-sun icon h1 text-white"></i>
+              <h3>570 DAYS</h3>
+              <p>SPENT ADVENTURE</p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-2">
+            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+              <i class="fa-brands fa-wolf-pack-battalion icon h1 text-white"></i>
+              <h3 class="">567 M</h3>
+              <p>JUGLE DISTANCE</p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /fun section end  -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
