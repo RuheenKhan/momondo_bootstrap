@@ -1,277 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOMONDO - MAKE YOUR TRAVELLING EASY</title>
-    <script src="https://kit.fontawesome.com/1261db9a65.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOMONDO - MAKE YOUR TRAVELLING EASY</title>
+  <script src="https://kit.fontawesome.com/1261db9a65.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <!-- header section start  -->
-    <nav class="navbar navbar-expand-lg bg-primary1 ">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img class="wi-25" src="./assets/img/logo.png" alt=""></a>
-          <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fa-solid fa-bars text-white"></i>
+  <!-- header section start  -->
+  <nav class="navbar navbar-expand-lg bg-primary1 ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img class="wi-25" src="./assets/img/logo.png" alt=""></a>
+      <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa-solid fa-bars text-white"></i>
 
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-danger1 fw-bold" aria-current="page" href="#">Flights</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Hotel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Car Hire</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Trip Finder</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Inspirations</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          English(GBP)
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Hindi</a></li>
-                          <li><a class="dropdown-item" href="#">Arabic </a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Korean</a></li>
-                        </ul>
-                    </li>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-danger1 fw-bold" aria-current="page" href="#">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Car Hire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Trip Finder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Inspirations</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English(GBP)
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Arabic </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Korean</a></li>
+              </ul>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-success1 fw-bold" href="#">Log in</a>
-                        
-                    </li>
-                </ul>
-                
-            </form>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link text-success1 fw-bold" href="#">Log in</a>
+
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- /header section end  -->
+
+
+
+  <!-- banner section start  -->
+  <section class="banner p-lr">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="display-3 pt-6t">"The best place to find the cheapest airfares"</h1>
+          <p class="fs-2 fw-bold pt-3">-every single time</p>
         </div>
-      </nav>
-    <!-- /header section end  -->
+      </div>
 
+      <div class="row ">
+        <div class="col-lg-12 bg-purple2 mx-auto rounded m-top position-relative mb-3">
+          <ul class="nav nav-tabs border-clean m-bottom" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active rounded-0 border-0 text-white" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true"><i class="fa-solid fa-plane-departure"></i> Flights</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link bg-purple1 mx-1 rounded-0 border-0 text-white" id="profile-tab"
+                data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+                aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotels</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link bg-purple1 rounded-0 border-0 text-white" id="contact-tab" data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                aria-selected="false"><i class="fa-solid fa-car"></i> Cars</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+              tabindex="0">
 
+              <form class="row gy-2 gx-3 align-items-center">
 
-    <!-- banner section start  -->
-    <section class="banner p-lr">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="display-3 pt-6t">"The best place to find the cheapest airfares"</h1>
-            <p class="fs-2 fw-bold pt-3">-every single time</p>
-          </div>
-        </div>
-
-        <div class="row ">
-          <div class="col-lg-12 bg-purple2 mx-auto rounded m-top position-relative mb-3">
-             <ul class="nav nav-tabs border-clean m-bottom" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active rounded-0 border-0 text-white" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-plane-departure"></i> Flights</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link bg-purple1 mx-1 rounded-0 border-0 text-white" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-hotel"></i> Hotels</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link bg-purple1 rounded-0 border-0 text-white" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="fa-solid fa-car"></i> Cars</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
-                <form class="row gy-2 gx-3 align-items-center">
-
-                  <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
-                    <label class="visually-hidden" for="autoSizingInputGroup">City</label>
-                    <div class="input-group">
-                      <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
-                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter origin city">
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
-                    <label class="visually-hidden" for="autoSizingInputGroup">destination</label>
-                    <div class="input-group">
-                      <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
-                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter destination city">
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
-                    <label class="visually-hidden" for="autoSizingInput">sDate</label>
-                    <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
-                    <label class="visually-hidden" for="autoSizingInput">eDate</label>
-                    <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-3 padding-right">
-                    <label class="visually-hidden" for="autoSizingSelect">Passenger</label>
-                    <div class="input-group">
-                      <div class="input-group-text"><i class="fa-solid fa-users text-secondary"></i></div>
-                      <select class="form-select" id="autoSizingSelect">
-                        <option selected>number of passenger</option>
-                        <option value="1">passenger One</option>
-                        <option value="2">passenger Two</option>
-                        <option value="3">passenger Three</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-1 padding-right">
-                    <button type="submit" class="btn btn-primary position-absolute btn-class">Submit</button>
-                  </div>
-                </form>
-              </div>
-
-              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
-              
-            </div>
-
-            <form class="row gy-2 gx-3 align-items-center mb-1">
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <label class="visually-hidden " for="autoSizingSelect">Trip</label>
-                <div class="input-group">
-                  <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-suitcase-rolling text-white"></i></div>
-                  <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
-                    <option selected>Trip type: Return trip</option>
-                    <option value="1">Trip 1 </option>
-                    <option value="2">Trip 2</option>
-                    <option value="3">Trip 3</option>
-                  </select>
+                <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">City</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter origin city">
                   </div>
                 </div>
 
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <label class="visually-hidden" for="autoSizingSelect">Trip</label>
-                <div class="input-group">
-                  <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-ticket text-white"></i></div>
-                  <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">destination</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup"
+                      placeholder="Enter destination city">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">sDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">eDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 padding-right">
+                  <label class="visually-hidden" for="autoSizingSelect">Passenger</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-users text-secondary"></i></div>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>number of passenger</option>
+                      <option value="1">passenger One</option>
+                      <option value="2">passenger Two</option>
+                      <option value="3">passenger Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-1 padding-right">
+                  <button type="submit" class="btn btn-primary position-absolute btn-class">Submit</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              ...</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+              ...</div>
+
+          </div>
+
+          <form class="row gy-2 gx-3 align-items-center mb-1">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <label class="visually-hidden " for="autoSizingSelect">Trip</label>
+              <div class="input-group">
+                <div class="input-group-text bg-transparent border-0"><i
+                    class="fa-solid fa-suitcase-rolling text-white"></i></div>
+                <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
+                  <option selected>Trip type: Return trip</option>
+                  <option value="1">Trip 1 </option>
+                  <option value="2">Trip 2</option>
+                  <option value="3">Trip 3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <label class="visually-hidden" for="autoSizingSelect">Trip</label>
+              <div class="input-group">
+                <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-ticket text-white"></i>
+                </div>
+                <select class="form-select bg-transparent border-0 text-white" id="autoSizingSelect">
                   <option selected>Ticket class: Economy</option>
                   <option value="1">Classic</option>
                   <option value="2">Business</option>
-                  </select>
-                </div>
+                </select>
               </div>
+            </div>
 
-              <div class="col-sm-6 col-md-6 col-lg-3">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                  <label class="form-check-label text-skyblue" for="autoSizingCheck">
-                    Direct flights only
-                  </label>
-                </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label text-skyblue" for="autoSizingCheck">
+                  Direct flights only
+                </label>
               </div>
+            </div>
 
-              <div class="col-sm-6 col-md-6 col-lg-3 ">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                  <label class="form-check-label text-skyblue" for="autoSizingCheck">
-                    Include nearby airports
-                  </label>
-                </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 ">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                <label class="form-check-label text-skyblue" for="autoSizingCheck">
+                  Include nearby airports
+                </label>
               </div>
-        
-            </form>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- /banner section end  -->
+
+
+
+  <!-- fun section start  -->
+  <section class="fun py-4">
+    <div class="container">
+      <h3 class="text-white fw-bold text-center">SOME FUN WE COVERED</h3>
+      <div class="row text-white m-top1">
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-solid fa-person-biking icon mb-1 icon-width text-white"></i>
+            <h3 class="h-width">480 M</h3>
+            <p>CYCLING RACK</p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-solid fa-route icon mb-1 icon-width  text-white"></i>
+            <h3 class="h-width">480 M</h3>
+            <p>DISTANCE COVERD</p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-solid fa-person-hiking icon mb-1 icon-width  text-white"></i>
+            <h3 class="h-width">5670 M</h3>
+            <p>ALTITUDE HIKED</p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-solid fa-sailboat icon mb-1 icon-width  text-white"></i>
+            <h3 class="h-width">180 KM</h3>
+            <p>SAILING DISTANCE</p>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-solid fa-mountain-sun icon mb-1 icon-width  text-white"></i>
+            <h3 class="h-width">570 DAYS</h3>
+            <p>SPENT ADVENTURE</p>
           </div>
         </div>
 
-            
+        <div class="col-sm-6 col-md-4 col-lg-2">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+            <i class="fa-brands fa-wolf-pack-battalion icon mb-1 icon-width  text-white"></i>
+            <h3 class="h-width">567 M</h3>
+            <p>JUGLE DISTANCE</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /fun section end  -->
+
+
+
+  <!-- newsletter section start  -->
+  <section class="news py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-7 col-sm-12 col-md-10 text-white text-center ms-auto">
+          <h4 class=" fw-bold ">SUSCRIBE FOR OUR TRAVEL NEWSLETTERS</h4>
+          <p class="">Join our community of over 300,000 global readers who recieve emails filed with news promotions, and other good stuff from G Adventures</p>
+
+          <p class="border-0">
+            <input class="bg-transparent" type="email" name="" id="" placeholder="Enter your email address.......">
+            <button type="submit" class="border-0 py-2 px-5 my-1 btn-color">Search</button>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- /newsletter section end  -->
+
+  <!-- destination section start-------------------------------------------  -->
+  <section class="destination bg-darkpurple py-4">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-white text-center mb-4">POPULAR DESTINATION</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/rome.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold"><span class="text-orange">$999</span> Rome, florence & venice 9-Night Vacation w/Air
+              </p>
+              <p>This is the lowest price we've seen in four years for a one night</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/australia.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold"><span class="text-orange">$1099</span> Australia:Sydney & Fiji Vacation w/Air
+                <span class="text-orange">Save $550</span>
+              </p>
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/greek.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold"><span class="text-orange">$1099</span> Greek islands & Night Vacation w/Air
+                <span class="text-orange">Save $1060</span>
+              </p>
+
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4 " style="height: 95%;">
+            <img src="./assets/img/ireland.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold">
+                <span class="text-orange">$899</span> Ireland & Germany 6 Night Adventure w/Air
+              </p>
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/moracco.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold">
+                <span class="text-orange">$1299</span> Morocco 4 Blue Escotland Vacation w/Air
+                <span class="text-orange">Save $1000</span>
+              </p>
+
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/cobo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold">
+                <span class="text-orange">$639</span> Cobo All Inchuave Daach Geteway w/Air
+                <span class="text-orange">save $250</span>
+              </p>
+
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/newzeland.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold">
+                <span class="text-orange">$2299</span> New Zealand Multi-City Trip w/Towe & car Rostet
+              </p>
+
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-12">
+          <div class="card border-4 mb-4" style="height: 95%;">
+            <img src="./assets/img/turkey.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="fw-bold">
+                <span class="text-orange">$1942</span> & up Turkey & NL Trip w/Air Gulfdad Towers &
+                Hotels
+              </p>
+
+              <p>
+                This is the lowest price we've seen in four years for a one night
+              </p>
+
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /banner section end  -->
+    </div>
+  </section>
+  <!-- /destination section end  -->
 
 
+  <!-- estimate section start --------------------------------------------------------- -->
+  <section class="estimate bg-lightpurpale ">
+      <div class="container py-5">
+        <div class="row">
+          <p class="text-white fs-2 fw-medium mb-0">GET A QUICK ESTIMATE!</p>
+          <p class="text-white fs-6 fw-semibold h-line">GET A PROFESSIONAL HELP</p>
+        </div>
 
-    <!-- fun section start  -->
-    <section class="fun py-4">
-      <div class="container">
-        <h3 class="text-white fw-bold text-center">SOME FUN WE COVERED</h3>
-        <div class="row text-white m-top1">
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
-              <i class="fa-solid fa-person-biking icon h1 text-white"></i>
-              <h3>480 M</h3>
-              <p>CYCLING RACK</p>
-            </div>
-            
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
-              <i class="fa-solid fa-route icon h1 text-white"></i>
-              <h3>480 M</h3>
-              <p>DISTANCE COVERD</p>
-            </div>
-            
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
-              <i class="fa-solid fa-person-hiking icon h1 text-white"></i>
-              <h3>5670 M</h3>
-              <p>ALTITUDE HIKED</p>
-            </div>
-            
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
-              <i class="fa-solid fa-sailboat icon h1 text-white"></i>
-              <h3>180 KM</h3>
-              <p>SAILING DISTANCE</p>
-            </div>
-            
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3"> 
-              <i class="fa-solid fa-mountain-sun icon h1 text-white"></i>
-              <h3>570 DAYS</h3>
-              <p>SPENT ADVENTURE</p>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-2">
-            <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
-              <i class="fa-brands fa-wolf-pack-battalion icon h1 text-white"></i>
-              <h3 class="">567 M</h3>
-              <p>JUGLE DISTANCE</p>
-            </div>
+        <div class="row">
+          <form action="">
+            <select name="travel" id="travel" class="col-lg-2 col-sm-5 col-12 py-2 px-2 m-1">
+              <option selected style="color: #808080">Travel Purpose</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <input type="text" placeholder="Travel Date" class="col-lg-2 col-sm-5 col-12 py-2 px-2 m-1">
+            <select name="people" id="people" class="col-lg-2 col-sm-5 col-12 py-2 px-2 m-1">
+              <option selected>Number of people</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+  
+            <input type="email" placeholder="Your Email" class="col-lg-2 col-sm-5 col-12 py-2 px-2 m-1">
+            <button  class="m-1 border-0 but">CALCULATE NOW</button>
+          </form>
+        </div>
           
+        
+      </div>
+
+      <img class="position-absolute px-0 museum" src="./assets/img/rome1.png" alt="" srcset="" />
+  </section>
+  <!-- /estimate section end --------------------------------------------------------- -->
+
+
+  <!-- blog section start --------------------------------------- -->
+  <div class="blog">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h4 class="fw-bold mb-3">LATEST BLOG</h4>
+          <p class="mb-5 fs-m fs-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, velit. Accusantium hic quibusdam repellat ipsum reprehenderit omnis minima harum a? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quos.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row pb-4">
+            <div class="col-sm-4 text-center">
+              <img src="./assets/img/blog.jpg" alt="blog pic">
+            </div>
+            <div class="col-sm-8 blog-content">
+              <p class="fs-8">Oct 19.2023</p>
+              <h6 class="fw-bold position-relative">10 THINGS TODO BEFORE TRAVEL</h6>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aspernatur corrupti ullam adipisci eaque necessitatibus
+                accusantium pariatur consequatur dicta assumenda rem?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-4 text-center">
+              <img src="./assets/img/life.jpg" alt="life pic">
+            </div>
+            <div class="col-sm-8 blog-content">
+              <p class="fs-8">Nov 28.2023</p>
+              <h6 class="fw-bold headings position-relative">SAY NO TO LAZY LIFE</h6>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aspernatur corrupti ullam adipisci eaque necessitatibus
+                accusantium pariatur consequatur dicta assumenda rem?
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /fun section end  -->
+    </div>
+  </div>
+  <!-- /blog section end --------------------------------------- -->
+
+
+  <!-- Footer section Start --------------------------------------- -->
+  <footer class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-white py-3">Top Countries</h4>
+          <ul class="list-unstyled">
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> United States</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> United Kingdom</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Spain</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Thailand</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> India</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Italy</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Germany</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Denmark</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> France</a></li>
+            <li class="text-gray"><i class="fa-solid fa-earth-americas"></i> Flights to<a class="text-white" href="javascript:void()"> Australia</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h4 class="text-white py-3">Top Cities</h4>
+          <ul class="list-unstyled">
+            <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Londan</a> United Kingdom</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">New York</a> United States</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Bangkok</a> Thailand</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Copenhagen</a> Denmark</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Orlando</a> United States</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Paris</a> France</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Dubai</a> United Arab Emirates</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Singapore</a> Singapore</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Istanbul</a> Turkey</li>
+          <li class="text-gray"><i class="fa-solid fa-location-dot"></i> Flights to <a class="text-white" href="javascript:void()">Hong Kong</a> Hong Kong</li>
+          </ul>
+          
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <h4 class="text-white py-3">International Sites</h4>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <ul class="list-unstyled">
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/hk.png"
+                  srcset="
+                    https://flagcdn.com/32x24/hk.png 2x,
+                    https://flagcdn.com/48x36/hk.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Hong Kong"
+                /> Hong Kong</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/jm.png"
+                  srcset="
+                    https://flagcdn.com/32x24/jm.png 2x,
+                    https://flagcdn.com/48x36/jm.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Jamaica"
+                /> Jamaica</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/pt.png"
+                  srcset="
+                    https://flagcdn.com/32x24/pt.png 2x,
+                    https://flagcdn.com/48x36/pt.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Portugal"
+                /> Portugal</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/gb-sct.png"
+                  srcset="
+                    https://flagcdn.com/32x24/gb-sct.png 2x,
+                    https://flagcdn.com/48x36/gb-sct.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Scotland"
+                /> Scotland</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/lk.png"
+                  srcset="
+                    https://flagcdn.com/32x24/lk.png 2x,
+                    https://flagcdn.com/48x36/lk.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Sri Lanka"
+                /> Sri Lanka</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/es.png"
+                  srcset="
+                    https://flagcdn.com/32x24/es.png 2x,
+                    https://flagcdn.com/48x36/es.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Spain"
+                /> Spain</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/th.png"
+                  srcset="
+                    https://flagcdn.com/32x24/th.png 2x,
+                    https://flagcdn.com/48x36/th.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Thailand"
+                /> Thailand</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <ul class="list-unstyled">
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/ua.png"
+                  srcset="
+                    https://flagcdn.com/32x24/ua.png 2x,
+                    https://flagcdn.com/48x36/ua.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Ukraine"
+                /> Ukraine</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/cv.png"
+                  srcset="
+                    https://flagcdn.com/32x24/cv.png 2x,
+                    https://flagcdn.com/48x36/cv.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Cape Verde"
+                /> Cape Verde</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/ax.png"
+                  srcset="
+                    https://flagcdn.com/32x24/ax.png 2x,
+                    https://flagcdn.com/48x36/ax.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Åland Islands"
+                /> Åland Islands</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/au.png"
+                  srcset="
+                    https://flagcdn.com/32x24/au.png 2x,
+                    https://flagcdn.com/48x36/au.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Australia"
+                /> Australia</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/bb.png"
+                  srcset="
+                    https://flagcdn.com/32x24/bb.png 2x,
+                    https://flagcdn.com/48x36/bb.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Barbados"
+                /> Barbados</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/in.png"
+                  srcset="
+                    https://flagcdn.com/32x24/in.png 2x,
+                    https://flagcdn.com/48x36/in.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="India"
+                /> India</li>
+
+                <li class="text-white"><img
+                  src="https://flagcdn.com/16x12/is.png"
+                  srcset="
+                    https://flagcdn.com/32x24/is.png 2x,
+                    https://flagcdn.com/48x36/is.png 3x
+                  "
+                  width="16"
+                  height="12"
+                  alt="Iceland"
+                /> Iceland</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-1 col-md-1 col-sm-12 d-flex">
+          <img class="flower" src="./assets/img/flower.png" alt="">
+        </div>
+        <div class="col-lg-9 col-md-11 ">
+          <ul class="list-unstyled d-md-flex mb-0 info">
+            <li><a class="text-white" href="javascript:void()">About Us</a></li>
+            <li><a class="text-white" href="javascript:void()">Jobs</a></li>
+            <li><a class="text-white" href="javascript:void()">Press</a></li>
+            <li><a class="text-white" href="javascript:void()">Afiliate</a></li>
+            <li><a class="text-white" href="javascript:void()">Terms of Use</a></li>
+            <li><a class="text-white" href="javascript:void()">Privacy Policy</a></li>
+            <li><a class="text-white" href="javascript:void()">Cookies</a></li>
+            <li><a class="text-white" href="javascript:void()">Airfires</a></li>
+            <li><a class="text-white" href="javascript:void()">Apps</a></li>
+            <li><a class="text-white" href="javascript:void()">Help</a></li>
+          </ul>
+          <p class="text-gray">
+            momondo.co.uk is a free. Independent global travel search site comparing billions of cheap flights, hotel and car hire deals
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-12 d-flex social-icon">
+          <ul class="list-unstyled d-flex">
+            <li><a href="javascript:void()" class="bg-gray me-2"><i class="fa-brands fa-twitter text-dark"></i></a></li>
+            <li><a href="javascript:void()" class="bg-gray me-2"><i class="fa-brands fa-facebook-f text-dark"></i></a></li>
+            <li><a href="javascript:void()" class="bg-gray me-2"><i class="fa-brands fa-google-plus-g text-dark"></i></a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer section end --------------------------------------- -->
 
 
 
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

@@ -1,3 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .bg-primary1 {
     background-color: #151D3D;
 }
@@ -24,6 +33,14 @@
 
 .text-skyblue {
     color: #B1A8D3;
+}
+
+.text-gray {
+    color: #8d8d8d;
+}
+
+.bg-gray {
+    background-color: #8d8d8d;
 }
 
 /* banner section start  */
@@ -114,9 +131,190 @@ div .col-auto {
     margin-top: 55px;
     margin-bottom: 50px;
 }
+
+.icon-width {
+    font-size: 40px;
+}
+
+
 /* /fun section end */
 
 
+/* newsletter section start  */
+.news {
+    background-image:linear-gradient(rgba(71,60,100,0.9), rgba(71,60,100,0.9)), url('../img/plan4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    
+}
+
+.btn-color {
+    color: #342753;
+    text-transform: uppercase;
+}
+
+.news input {
+    width: 73%;
+    border: 2px solid #fff;
+    padding: 6px 0;
+}
+
+.news input::placeholder {
+    color: #fff;
+    padding-left: 6px;
+}
+
+
+/* /newsletter section end  */
+
+
+
+/* destination section start  */
+.bg-darkpurple {
+    background-color: #1F172F;
+}
+
+.text-orange {
+    color: #e57c5c;
+}
+
+.destination img {
+    height: 200px;
+}
+
+.destination p {
+    font-size: 14px;
+}
+
+/* /destination section end  */
+
+
+/* estimate section start  */
+.bg-lightpurpale {
+    background-color: #684CAD;
+}
+.estimate {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.estimate .h-line{
+    position: relative;
+    padding-bottom: 0px;
+}
+.estimate .h-line::after {
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 1.5px;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+}
+
+.estimate form select,.estimate form input,.estimate form button {
+   border-radius: 0;
+   border: none;
+   color: #8d8d8d;
+   /* width: 200px; */
+}
+
+.estimate form button {
+    background-color: #EE8C09;
+    font-size: 14px;
+    border: none;
+    width: 150px;
+    font-weight: 500;
+    /* padding: 10px 0; */
+    height: 40px;
+    color: #000;
+}
+
+.fs-7 {
+    font-size: 14px;
+}
+
+.fs-8 {
+    font-size: 17px;
+}
+
+.estimate img {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 264px;
+    position: absolute;
+}
+/* /estimate section end  */
+
+/* blog css start -------------------------------------- */
+
+.blog p {
+    color: #575656;
+}
+
+.blog h6::after {
+    content: ' ';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    
+}
+
+.blog .headings::after {
+    content: ' ';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+    
+}
+
+.blog img {
+    min-height: 100%;
+    width: 100%;
+}
+/* /blog css end -------------------------------------- */
+
+
+
+
+/* Footer section Start */
+footer {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/airport.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+footer .flower {
+    width: 50px;
+    height: 50px;
+}
+
+footer .social-icon a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+footer .info li {
+    margin-right: 20px;
+}
+/* /Footer section end  */
 
 
 
@@ -126,13 +324,53 @@ div .col-auto {
 
 
 /* media query start  */
+@media screen and (max-width:1400px) {
+    .museum {
+        display: none;
+    }
+}
+@media screen and (max-width:1200px) {
+
+    .icon-width {
+        font-size: 35px;
+    }
+    .col-5 {
+        width: 80%;
+    }
+
+    .h-width {
+        font-size: 28px;
+    }
+
+    .bg-dark1{
+        width: 110%;
+    }
+
+    .news input{
+        width: 100%;
+    }
+    .news  button{
+        margin-top: 6px !important;
+        width: 100%;
+    }
+
+    
+
+}
+
 @media screen and (max-width:992px) {
+    
+    
     .btn-class {
         position: static !important;
         width: 100%;
         height: 40px;
         border-radius: 8px;
 
+    }
+
+    .bg-dark1{
+        width: 100%;
     }
         
     .m-top {
@@ -141,6 +379,14 @@ div .col-auto {
 
     .form-check {
         padding-left: 34px !important;
+    }
+
+    .estimate form button{
+        width: 85.4%;
+    }
+
+    footer .info li {
+        margin-right: 6px;
     }
     
 }
@@ -163,6 +409,21 @@ div .col-auto {
     .form-check {
         padding-left: 34px !important;
     }
+
+    .ma-pa {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    footer .flower {
+        margin-bottom: 20px;
+    }
+
+    footer .social-icon{
+
+    }
+
+    
 }
 
 @media screen and (max-width:576px) {
@@ -177,6 +438,48 @@ div .col-auto {
     .pt-6t {
         padding-top: 30px;
     }
+
+    .ma-pa {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .head-6{
+        font-size: 18px;
+    }
+
+    .destination {
+        padding: 0 40px;
+    }
+
+    .estimate form button{
+        width: 100%;
+    }
+
+    .blog-content{
+        text-align: center;
+    }
+
+    .blog img{
+        width: 50%;
+    }
+
+    .blog h6::after{
+        left: 20%;
+    }
+
+    .blog .headings::after{
+        left: 30%;
+    }
+
+    .fs-m {
+        font-size: 16px;
+    }
+    
+    footer {
+        padding-left: 10px;
+    }
+    
 }
 /* /media query end */
 
