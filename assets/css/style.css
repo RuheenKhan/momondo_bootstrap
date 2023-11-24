@@ -43,6 +43,17 @@ a {
     background-color: #8d8d8d;
 }
 
+/* navbar section start  */
+nav ul li a{
+    overflow: hidden;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #a13352 !important;
+    
+}
+/* /navbar section end  */
+
 /* banner section start  */
 .banner {
     background: url(../img/beach1.jpg);
@@ -123,6 +134,18 @@ div .col-auto {
     height: auto;
 }
 
+.fun .fun-card{
+    transition: all 0.8s;
+}
+
+.fun .fun-card:hover {
+    transition: 0.8s ease-in-out;
+    border-radius: 10px;
+    transform: scale(1.1);
+    background-color:rgba(163, 51, 83, 0.5);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+}
+
 .bg-dark1 {
     background-color: #0000006a;
 }
@@ -166,6 +189,16 @@ div .col-auto {
     padding-left: 6px;
 }
 
+.news button{
+    transition: all 0.5s ease-in;
+}
+
+.news button:hover {
+    transition: 0.5s ease-in;
+    background-color:#bb3259;
+    color: #fff;
+}
+
 
 /* /newsletter section end  */
 
@@ -187,6 +220,17 @@ div .col-auto {
 .destination p {
     font-size: 14px;
 }
+
+.destination .card{
+    transition: all 0.5s ease-in-out;
+}
+.destination .card:hover {
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
+}
+
 
 /* /destination section end  */
 
@@ -231,6 +275,13 @@ div .col-auto {
     /* padding: 10px 0; */
     height: 40px;
     color: #000;
+    transition:all 0.5s ease-in;
+}
+
+.estimate form button:hover {
+    transition: 0.5s ease-in;
+    background-color:#bb3259;
+    color: #fff;
 }
 
 .fs-7 {
@@ -282,6 +333,14 @@ div .col-auto {
 .blog img {
     min-height: 100%;
     width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.blog img:hover {
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.3);
 }
 /* /blog css end -------------------------------------- */
 
@@ -309,10 +368,23 @@ footer .social-icon a{
     border-radius: 30px;
     text-align: center;
     padding-top: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .social-icon a:hover {
+    background-color: #A13352;
+    color: #fff !important;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.8);
 }
 
 footer .info li {
     margin-right: 20px;
+}
+
+footer ul li a:hover {
+   color: #A13352 !important;
 }
 /* /Footer section end  */
 
@@ -474,6 +546,14 @@ footer .info li {
 
     .fs-m {
         font-size: 16px;
+    }
+
+    .fun .fun-card {
+        width: 50%;
+    }
+
+    .destination .card {
+        width: 80%;
     }
     
     footer {

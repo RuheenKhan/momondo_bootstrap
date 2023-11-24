@@ -19,7 +19,7 @@
   <!-- header section start  -->
   <nav class="navbar navbar-expand-lg bg-primary1 ">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img class="wi-25" src="./assets/img/logo.png" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img class="wi-25" src="./assets/img/logo.png" alt="momondo logo"></a>
       <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -105,10 +105,60 @@
                 aria-selected="false"><i class="fa-solid fa-car"></i> Cars</button>
             </li>
           </ul>
+
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
               tabindex="0">
 
+              <form class="row gy-2 gx-3 align-items-center">
+
+                <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">City</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter origin city">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">destination</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup"
+                      placeholder="Enter destination city">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">sDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">eDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingSelect">Passenger</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-users text-secondary"></i></div>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>number of passenger</option>
+                      <option value="1">passenger One</option>
+                      <option value="2">passenger Two</option>
+                      <option value="3">passenger Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <button type="submit" class="btn text-white position-absolute btn-class">Submit</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
               <form class="row gy-2 gx-3 align-items-center">
 
                 <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
@@ -157,10 +207,54 @@
               </form>
             </div>
 
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-              ...</div>
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-              ...</div>
+              <form class="row gy-2 gx-3 align-items-center">
+
+                <div class="col-sm-6 col-md-4 col-lg-2 mx-0 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">City</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter origin city">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInputGroup">destination</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-location-dot text-secondary"></i></div>
+                    <input type="text" class="form-control" id="autoSizingInputGroup"
+                      placeholder="Enter destination city">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">sDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-2 padding-right">
+                  <label class="visually-hidden" for="autoSizingInput">eDate</label>
+                  <input type="date" class="form-control" id="autoSizingInput" placeholder="Enter origin city">
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 padding-right">
+                  <label class="visually-hidden" for="autoSizingSelect">Passenger</label>
+                  <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-users text-secondary"></i></div>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>number of passenger</option>
+                      <option value="1">passenger One</option>
+                      <option value="2">passenger Two</option>
+                      <option value="3">passenger Three</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-1 padding-right">
+                  <button type="submit" class="btn btn-primary position-absolute btn-class">Submit</button>
+                </div>
+              </form>
+            </div>
 
           </div>
 
@@ -179,7 +273,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col-sm-6 col-md-6 col-lg-2">
               <label class="visually-hidden" for="autoSizingSelect">Trip</label>
               <div class="input-group">
                 <div class="input-group-text bg-transparent border-0"><i class="fa-solid fa-ticket text-white"></i>
@@ -192,7 +286,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="col-sm-6 col-md-6 col-lg-2">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="autoSizingCheck">
                 <label class="form-check-label text-skyblue" for="autoSizingCheck">
@@ -201,7 +295,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-3 ">
+            <div class="col-sm-6 col-md-6 col-lg-2 ">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="autoSizingCheck">
                 <label class="form-check-label text-skyblue" for="autoSizingCheck">
@@ -229,8 +323,8 @@
       <h3 class="text-white fw-bold text-center">SOME FUN WE COVERED</h3>
       <div class="row text-white m-top1">
 
-        <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+        <div class="col-sm-6 col-md-4 col-lg-2 ">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-solid fa-person-biking icon mb-1 icon-width text-white"></i>
             <h3 class="h-width">480 M</h3>
             <p>CYCLING RACK</p>
@@ -239,7 +333,7 @@
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-solid fa-route icon mb-1 icon-width  text-white"></i>
             <h3 class="h-width">480 M</h3>
             <p>DISTANCE COVERD</p>
@@ -248,7 +342,7 @@
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-solid fa-person-hiking icon mb-1 icon-width  text-white"></i>
             <h3 class="h-width">5670 M</h3>
             <p>ALTITUDE HIKED</p>
@@ -257,7 +351,7 @@
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-solid fa-sailboat icon mb-1 icon-width  text-white"></i>
             <h3 class="h-width">180 KM</h3>
             <p>SAILING DISTANCE</p>
@@ -266,7 +360,7 @@
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-solid fa-mountain-sun icon mb-1 icon-width  text-white"></i>
             <h3 class="h-width">570 DAYS</h3>
             <p>SPENT ADVENTURE</p>
@@ -274,7 +368,7 @@
         </div>
 
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="bg-dark1 text-center pt-3 pb-2 mt-3">
+          <div class="bg-dark1 text-center pt-3 pb-2 mt-3 fun-card mx-auto">
             <i class="fa-brands fa-wolf-pack-battalion icon mb-1 icon-width  text-white"></i>
             <h3 class="h-width">567 M</h3>
             <p>JUGLE DISTANCE</p>
@@ -317,7 +411,7 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/rome.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold"><span class="text-orange">$999</span> Rome, florence & venice 9-Night Vacation w/Air
@@ -328,7 +422,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/australia.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold"><span class="text-orange">$1099</span> Australia:Sydney & Fiji Vacation w/Air
@@ -344,7 +438,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/greek.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold"><span class="text-orange">$1099</span> Greek islands & Night Vacation w/Air
@@ -361,7 +455,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4 " style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto " style="height: 95%;">
             <img src="./assets/img/ireland.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold">
@@ -379,7 +473,7 @@
 
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/moracco.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold">
@@ -397,7 +491,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/cobo.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold">
@@ -415,7 +509,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/newzeland.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold">
@@ -432,7 +526,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card border-4 mb-4" style="height: 95%;">
+          <div class="card border-4 mb-4 mx-auto" style="height: 95%;">
             <img src="./assets/img/turkey.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="fw-bold">
@@ -588,7 +682,7 @@
                   width="16"
                   height="12"
                   alt="Hong Kong"
-                /> Hong Kong</li>
+                /><a> Hong Kong</a> </li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/jm.png"
@@ -599,7 +693,7 @@
                   width="16"
                   height="12"
                   alt="Jamaica"
-                /> Jamaica</li>
+                /><a> Jamaica</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/pt.png"
@@ -610,7 +704,7 @@
                   width="16"
                   height="12"
                   alt="Portugal"
-                /> Portugal</li>
+                /><a> Portugal</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/gb-sct.png"
@@ -621,7 +715,7 @@
                   width="16"
                   height="12"
                   alt="Scotland"
-                /> Scotland</li>
+                /><a> Scotland</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/lk.png"
@@ -632,7 +726,7 @@
                   width="16"
                   height="12"
                   alt="Sri Lanka"
-                /> Sri Lanka</li>
+                /><a> Sri Lanka</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/es.png"
@@ -643,7 +737,7 @@
                   width="16"
                   height="12"
                   alt="Spain"
-                /> Spain</li>
+                /><a> Spain</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/th.png"
@@ -654,7 +748,7 @@
                   width="16"
                   height="12"
                   alt="Thailand"
-                /> Thailand</li>
+                /><a> Thailand</a></li>
               </ul>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -668,7 +762,7 @@
                   width="16"
                   height="12"
                   alt="Ukraine"
-                /> Ukraine</li>
+                /><a> Ukraine</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/cv.png"
@@ -679,7 +773,7 @@
                   width="16"
                   height="12"
                   alt="Cape Verde"
-                /> Cape Verde</li>
+                /><a> Cape Verde</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/ax.png"
@@ -690,7 +784,7 @@
                   width="16"
                   height="12"
                   alt="Åland Islands"
-                /> Åland Islands</li>
+                /><a> Åland Islands</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/au.png"
@@ -701,7 +795,7 @@
                   width="16"
                   height="12"
                   alt="Australia"
-                /> Australia</li>
+                /><a> Australia</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/bb.png"
@@ -712,7 +806,7 @@
                   width="16"
                   height="12"
                   alt="Barbados"
-                /> Barbados</li>
+                /><a> Barbados</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/in.png"
@@ -723,7 +817,7 @@
                   width="16"
                   height="12"
                   alt="India"
-                /> India</li>
+                /><a> India</a></li>
 
                 <li class="text-white"><img
                   src="https://flagcdn.com/16x12/is.png"
@@ -734,7 +828,7 @@
                   width="16"
                   height="12"
                   alt="Iceland"
-                /> Iceland</li>
+                /><a> Iceland</a></li>
               </ul>
             </div>
           </div>
